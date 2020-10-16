@@ -1,6 +1,5 @@
 #Josh Stolz
 
-# Twitter
 
 #NAME MASKING
 # If the variable is not defined in the function R looks one level up.
@@ -119,7 +118,11 @@ cachemean(mvec)
 
 #### inverting a matrix is a common process that takes a lot of computation
 #### using the script above and the skeleton below make a function that will cache an inverted square matrix
-### Solve() inverts a square matrix.
+### solve() inverts a square matrix.
+a=c(1,2,3)
+b=c(3,2,1)
+c=c(2,1,3)
+dataset=matrix(cbind(a,b,c),nrow=3,ncol=3)
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -128,3 +131,7 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
 
 }
+
+
+## https://www.coursera.org/learn/r-programming/home/welcome
+## https://www.geeksforgeeks.org/lexical-scoping-in-r-programming/
