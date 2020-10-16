@@ -1,5 +1,17 @@
 #Josh Stolz
 
+#Lexical Scoping is a set of rules that helps to determine how R represents the value of a symbol.
+#It is an in-built rule in R which automatically works at the language level. 
+#It is mostly used to specify statistical calculations. 
+#Lexical scoping looks up to symbol based on how functions were nested initially when they were created and not on how they were nested when they called upon. 
+#When we use lexical scoping we don’t have to know how the function is called and to figure out where the value of the variable will be looked upon.
+#We only have to look at the function’s definition.
+Example:
+f <- function(x, y)
+{
+  x * y * z
+}
+
 
 #NAME MASKING
 # If the variable is not defined in the function R looks one level up.
